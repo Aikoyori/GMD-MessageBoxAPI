@@ -2,10 +2,10 @@
 
 int main()
 {
-	MsgBox MSGBOX_1("First Box", "<cj>Colour</c>", "OK");
+	MsgBox MSGBOX_1("First Box", "1", "OK");
 	DWORD allocation = MSGBOX_1.Setup();
 
-	MsgBox MSGBOX_2("Second Box", "Line 1\nLine 2\x0ALine 3", "OK");
+	MsgBox MSGBOX_2("Second Box", "2", "OK");
 	MSGBOX_2.Setup();
 	
 	while (1) {
