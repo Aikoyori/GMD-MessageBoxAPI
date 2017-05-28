@@ -16,5 +16,5 @@ Do not go beyond 127 characters for the title, content and button text, bypassin
 
 Only use [printable ASCII characters](http://www.ascii-code.com/).
 
-You can use colors, there are 7 valid colors (any invalid colors will be set to red): r = red, y = yellow, l = light blue, o = orange, g = green, j = turquoise, p = pink.
-To use colors check the [color example](examples/color.cpp).
+You can use colours, there are 7 valid colours (any invalid colours will be set to red): r = red, y = yellow, l = light blue, o = orange, g = green, j = turquoise, p = pink.
+To use colours check the [colour example](examples/color.cpp).
