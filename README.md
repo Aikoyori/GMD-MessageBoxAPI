@@ -12,9 +12,9 @@ You can find examples in the [examples](examples) folder.
 
 ## Use
 
-You can use colors, there are 7 valid colors (any invalid colors will be set to red): r = red, y = yellow, l = light blue, o = orange, g = green, j = turquoise, p = pink.
-To use colors check the [color example](examples/color.cpp).
-
 Do not go beyond 127 characters for the title, content and button text, bypassing this limitation for the content will result in a game crash.
 
 Only use [printable ASCII characters](http://www.ascii-code.com/).
+
+You can use colors, there are 7 valid colors (any invalid colors will be set to red): r = red, y = yellow, l = light blue, o = orange, g = green, j = turquoise, p = pink.
+To use colors check the [color example](examples/color.cpp).
