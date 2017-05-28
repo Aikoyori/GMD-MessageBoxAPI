@@ -2,6 +2,9 @@
 
 MsgBox::~MsgBox()
 {
+	memset(title, 0, 127);
+	memset(content, 0, 127);
+	memset(button, 0, 127);
 	FreeLibrary(PSAPI);
 	FreeLibrary(OpenGl32);
 }
