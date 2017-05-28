@@ -89,9 +89,9 @@ bool MsgBox::SetupVars(char title[128], char content[256], char button[8], char 
 	DWORD v1 = allocated_addr + 0x200;
 	DWORD v2 = allocated_addr + 0x280;
 	DWORD v3 = allocated_addr + 0x300;
-	WriteProcessMemory(hProc, (LPVOID)(allocated_addr + 0x200), title, 128, NULL);
-	WriteProcessMemory(hProc, (LPVOID)(allocated_addr + 0x280), button, 8, NULL);
-	WriteProcessMemory(hProc, (LPVOID)(allocated_addr + 0x300), content, 256, NULL);
+	WriteProcessMemory(hProc, (LPVOID)(allocated_addr + 0x200), title, 127, NULL);
+	WriteProcessMemory(hProc, (LPVOID)(allocated_addr + 0x280), button, 127, NULL);
+	WriteProcessMemory(hProc, (LPVOID)(allocated_addr + 0x300), content, 127, NULL);
 	WriteProcessMemory(hProc, (LPVOID)(hBase + 0x24654A), &text_length, 1, NULL);
 	WriteProcessMemory(hProc, (LPVOID)(hBase + 0x24656F), &v1, 4, NULL);
 	WriteProcessMemory(hProc, (LPVOID)(hBase + 0x246576), &v2, 4, NULL);
