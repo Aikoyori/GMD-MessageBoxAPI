@@ -3,6 +3,8 @@ Simply put, a C++ library for displaying custom message boxes onto Geometry Dash
 
 Only supported for the Steam release 2.102 of the game on Windows PCs.
 
+Note: I probably screwed up the function hooking, so advice on that'd be nice.
+
 ## Setup
 
 Add the [MBXAPI.h](source/MBXAPI.h) file to your headers directory and the [MBXAPI.cpp](source/MBXAPI.cpp) file in your sources directory,
