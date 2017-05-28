@@ -6,7 +6,7 @@ Only supported for the Steam release 2.102 of the game on Windows PCs.
 ## Setup
 
 Add the [MBXAPI.h](source/MBXAPI.h) file to your headers directory and the [MBXAPI.cpp](source/MBXAPI.cpp) file in your sources directory,
-Then just include the header at the start of the project (no need to include Windows.h as it is included for you).
+then just include the header at the start of the project (no need to include Windows.h as it is included for you).
 
 You can find examples in the [examples](examples) folder.
 
