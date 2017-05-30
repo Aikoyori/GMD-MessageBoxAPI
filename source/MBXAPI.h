@@ -2,6 +2,7 @@
 #define MBXAPI_H
 
 #include <Windows.h>
+#include <iostream>
 
 class MsgBox;
 
@@ -15,7 +16,7 @@ private:
 
 	typedef DWORD(*opengl_wglSwapBuffers)();
 	HMODULE PSAPI = LoadLibraryA("psapi.dll");
-	WNDPROC EnumProcModules = (WNDPROC)GetProcAddress(PSAPI, "EnumProcessModules");
+	WNDPROC EnumProcessModules = (WNDPROC)GetProcAddress(PSAPI, "EnumProcessModules");
 	WNDPROC GetModuleFileNameExA = (WNDPROC)GetProcAddress(PSAPI, "GetModuleFileNameExA");
 
 	HINSTANCE OpenGl32 = LoadLibraryA("OPENGL32.dll");
@@ -23,7 +24,7 @@ private:
 	DWORD sb_offset = (DWORD)wgl_SwapBuffers - (DWORD)OpenGl32;
 
 	DWORD GetModuleBaseAddress(char* name, DWORD procId);
-	bool CustomCall(DWORD alloc_addr);
+	bool JMPCLL(HANDLE hProc, DWORD StartPoint, DWORD EndPoint);
 	bool SetupVars(char title[128], char content[256], char button[8], char text_length);
 public:
 	~MsgBox();
